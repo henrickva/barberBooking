@@ -1,6 +1,7 @@
 import Header from "../_components/header";
 import { format } from 'date-fns'
 import {ptBR} from 'date-fns/locale'
+import Search from "./_components/search";
 export default function Home() {
   return (
     <main>
@@ -15,7 +16,9 @@ export default function Home() {
         </p>
       </section>
       
-      
+      <section className="px-5 pt-2">
+        <Search/>
+      </section>
     </main>
   );
 }
